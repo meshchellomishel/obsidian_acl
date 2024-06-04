@@ -11,11 +11,28 @@
             "id": "4ea5e620f15e2f44",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "acl/attacks/ATTACKS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b159c72d32874c64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DSA.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -61,8 +78,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -82,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DSA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DSA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DSA.md"
+              }
             }
           }
         ]
@@ -139,17 +159,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4ea5e620f15e2f44",
+  "active": "b159c72d32874c64",
   "lastOpenFiles": [
+    "acl/Questions.md",
+    "DSA.md",
+    "PHY/PHY.md",
+    "PHY/RGMII/RGMII.md",
+    "PHY",
+    "acl/ACL.md",
+    "acl/attacks/ATTACKS.md",
     "Untitled.canvas",
     "2024-05-31.md",
+    "PHY/RGMII",
     "acl/tc/TC.md",
     "acl/nftables/NFTABLES.md",
-    "ACL.md",
     "acl/tests/ICMP.md",
     "acl/tests",
     "_in_10_minutes.md",
-    "acl/attacks/ATTACKS.md",
     "acl/attacks",
     "acl/nftables",
     "acl/tc",
