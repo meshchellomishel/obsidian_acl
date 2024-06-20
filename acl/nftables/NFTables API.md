@@ -42,7 +42,7 @@ struct nfgenmsg {
 ```
 
 - ***[nfgen_family](https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/netfilter.h#L58)*** - its not AF_xxx family. Netfilter have own attributes for it.
-- version - In all examples that i see its always ***[NFNETLINK_V0](https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/netfilter/nfnetlink.h#L40)*** that equals "0".
+- version - In all examples that i saw its always ***[NFNETLINK_V0](https://elixir.bootlin.com/linux/latest/source/include/uapi/linux/netfilter/nfnetlink.h#L40)*** that equals "0".
 - res_id - its useful for *NFNL_CB_BATCH* callbacks for define netfilter subsystem.
 
 ***
@@ -223,6 +223,17 @@ An offload device is one that has the NETIF_F_HW_TC feature enabled and implemen
 ```
 
 ndo_setup_tc be calls from ***[tcf_block_offload_cmd](https://elixir.bootlin.com/linux/latest/C/ident/tcf_block_offload_cmd)*** 
+
+
+> [!NOTE] from *[commit](https://github.com/torvalds/linux/commit/c9626a2cbdb20e26587b3fad99960520a023432b)*
+> This patch adds hardware offload support for nftables through the
+existing netdev_ops->ndo_setup_tc() interface, the TC_SETUP_CLSFLOWER
+classifier and the flow rule API. This hardware offload support is
+available for the NFPROTO_NETDEV family and the ingress hook.
+
+nft error when hook or family not supported offloading:
+
+	`Chain of type "filter" is not supported, perhaps kernel support is missing?`
 
 ***
 

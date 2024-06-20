@@ -14,4 +14,15 @@
 		Более подробную информацию о qdisc class act можно найти в соответствующем журнале фиксации или в руководстве Cilium.
 
 	 [Cilium](https://docs.cilium.io/en/latest/bpf/#tc-traffic-control).
-		
+
+
+***
+
+***Some useful***
+
+1. *[tc ingress aggregation](https://netdevconf.info/2.2/slides/salim-tc-workshop05.pdf)***
+2. *[about ingress and egress filters](https://lore.kernel.org/netdev/CAFbJv-5KYtxrXwiAJmyFuKx9zVn1NaOmt-EA7eM+_StS-+dbAA@mail.gmail.com/T/)*
+3. *[mb useful about ingress/egress](https://lartc.vger.kernel.narkive.com/erTXKqsd/ingress-and-egress)*
+4. *[commit about egress and ingress](f6f3bac08ff9855d803081a353a1fafaa8845739)*
+5. *[tc egress and ingress examples(bpf)](https://github.com/iproute2/iproute2/commit/8f9afdd531560c1534be44424669add2e19deeec)*
+6. 
