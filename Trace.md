@@ -8,7 +8,7 @@
 	list of traceble funtions:
 	`sudo trace-cmd list -f | grep nfnetlink`
 	trace with filter:
-	`sudo trace-cmd record -l nfnetlink* -p function_graph`
+	`sudo trace-cmd record -l {filter} -p function_graph`
 	open report:
 	`sudo trace-cmd report`
 3. ***[trace-cmd-github](https://github.com/rostedt/trace-cmd)***
