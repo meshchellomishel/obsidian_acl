@@ -71,6 +71,18 @@
             }
           },
           {
+            "id": "2257d9dbcde7092b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GIT.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "b159c72d32874c64",
             "type": "leaf",
             "state": {
@@ -95,7 +107,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -161,7 +173,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Trace.md",
+                "file": "GIT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Trace.md",
+                "file": "GIT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -201,7 +213,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Trace.md"
+                "file": "GIT.md"
               }
             }
           }
@@ -222,10 +234,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7a7f039dea7b0750",
+  "active": "2257d9dbcde7092b",
   "lastOpenFiles": [
-    "Report.md",
     "Trace.md",
+    "GIT.md",
+    "Report.md",
     "Some useful.md",
     "acl/nftables/NFTables API.md",
     "acl/ACL.md",
