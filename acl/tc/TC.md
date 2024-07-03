@@ -15,8 +15,47 @@
 
 	 [Cilium](https://docs.cilium.io/en/latest/bpf/#tc-traffic-control).
 
+3. ***egress hook***
+
+	The classification-action pipeline allows the user to perform a lot of packet processing in the kernel. However, it required a classful qdisc in order to be able to execute filters and actions. Also, it was hard to configure TC for both QoS and packet processing at the same time. Therefore, Daniel Borkmann introduced the clsact qdisc[3]. Essentially, it is an ingress qdisc to which two filter vlocks can be attached. One of them is used as the ingress chain as with the ingress qdisc, the other one gets executed for egress traffic with a new hook. This way, the TC subsystem is invoked twice for an egress packet – first for the egress chain in the clsact qdisc, second for the root egress qdisc
 
 ***
+
+##### tc examples
+
+1. Drop all first icmp packets
+
+ingress
+```
+tc qdisc add dev enp29s0 clsact
+
+tc f add dev enp29s0 ingress  \
+pref 49152                    \
+protocol ip                   \
+u32                           \
+match u16 0x0001 0xffff at 26 \
+action drop
+```
+
+egress
+```
+tc f add dev enp29s0 egress   \
+pref 49151                    \
+protocol ip                   \
+u32                           \
+match u16 0x0001 0xffff at 26 \
+action drop
+```
+
+***
+
+##### CLSACT offloading
+
+
+
+
+***
+
 
 ***Some useful***
 

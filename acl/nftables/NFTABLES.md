@@ -20,3 +20,10 @@
 ***
 
 
+#### Some useful
+
+1. *[nft offloading](https://www.youtube.com/watch?v=gt77gCdsdc0)*
+2. *[about offloading](https://dspace.cuni.cz/bitstream/handle/20.500.11956/99083/120298453.pdf?sequence=1&isAllowed=y)*
+3. *[about egress and ingress qdiscs](https://netbeez.net/blog/how-to-use-the-linux-traffic-control/)*
+4. *[functional block device](https://gist.github.com/dogbunny/fda68f21784025876c57a4dfc3fb6bcc)*
+5. *[policer](https://habr.com/ru/articles/138562/)*

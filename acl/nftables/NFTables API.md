@@ -152,6 +152,12 @@ Chain have default verdict, by default it is  **[NF_ACCEPT](https://elixir.bootl
 
 Its verdict useful not only for chain configuration. The same constants use for *rule configuration*. 
 
+###### Chain flags
+
+- *NFT_CHAIN_BASE* - base chain flag, now maybe it sets by default *[in the kernel](https://elixir.bootlin.com/linux/latest/source/net/netfilter/nf_tables_api.c#L2414)*
+- *NFT_CHAIN_HW_OFFLOAD* - offload chain flag
+- *NFT_CHAIN_BINDING* - *[add flag commit](https://github.com/torvalds/linux/commit/d0e2c7de92c7f2b3d355ad76b0bb9fc43d1beb87)*
+
 
 ***
 
@@ -234,6 +240,9 @@ available for the NFPROTO_NETDEV family and the ingress hook.
 nft error when hook or family not supported offloading:
 
 	`Chain of type "filter" is not supported, perhaps kernel support is missing?`
+
+Maybe if change binder_type in nf_tables_offload on EGRESS and INGRESS it will be work. Because in ***[this function](https://elixir.bootlin.com/linux/latest/source/net/sched/cls_api.c#L747)*** other parameters not changing by binder_type
+
 
 ***
 
